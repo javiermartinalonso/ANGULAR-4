@@ -11,10 +11,14 @@ import { Image } from '../../models/image';
       box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
       margin-bottom:20px;
     }
-    
+
     img:hover {
       filter: gray; /* IE6-9 */
       -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    }
+
+    a:hover {
+      cursor:pointer;
     }
   `]
 })

@@ -78,6 +78,16 @@
 
       output binding con ()
 
+- crear 2 paginas/secciones nuevas: contact y about
+
+		ng g c contact --prefix mfa
+		ng g c about --prefix mfa
+
+- añadir un enrutador para poder navegar con el menú de navegación
+
+- usar routerLink en vez de href, para no tener que recargar la pagina
+
+- arreglar la pagina activa del menu, para ello usamos routerLinkActive
 
 
 
