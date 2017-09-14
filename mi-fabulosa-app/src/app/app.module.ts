@@ -10,15 +10,7 @@ import { ImageComponent } from './gallery/image-list/image.component';
 import { ImageDetailComponent } from './gallery/image-detail/image-detail.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-import {Routes, RouterModule} from '@angular/router';
-
-/* Defino las rutas del menu */
-const appRoutes: Routes = [
-  { path: '', redirectTo:'/gallery', pathMatch: 'full'},
-  { path: 'gallery', component: GalleryComponent},
-  { path: 'contact', component: ContactComponent},
-  { path: 'about', component: AboutComponent}
-];
+import { routes} from './app.routes';
 
 @NgModule({
   declarations: [
@@ -32,7 +24,7 @@ const appRoutes: Routes = [
     AboutComponent
   ],
   imports: [
-    RouterModule.forRoot(appRoutes),
+    routes,
     BrowserModule
   ],
   providers: [ImageService],

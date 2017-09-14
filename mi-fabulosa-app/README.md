@@ -89,6 +89,8 @@
 
 - arreglar la pagina activa del menu, para ello usamos routerLinkActive
 
+- mejorar la estructura del enrutador. creamos app.routers.ts y modificar app.module.ts
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
