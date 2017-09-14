@@ -4,7 +4,7 @@
 ## creacion de la primera aplicacion en angular 4 "mi-fabulosa-app" ##
 
 
-- creamos una nueva aplicacion angular 4 donde los selectores tienen como prefijo mfa
+- creamos una nueva aplicación angular 4 donde los selectores tienen como prefijo mfa
 
 	    ng new mi-fabulosa-app --prefix mfa
 
@@ -18,9 +18,9 @@
 	
 	    ng g c --help
 
-- crear componente barra de navegacion
+- crear componente barra de navegación
 	
-> 	ng generate component navbar -is --flat
+	> 	ng generate component navbar -is --flat
 	-is --inline-style: no crear el fichero css del componente
 	--flat: indicamos que no se cree en un nuevo directorio
 
@@ -31,7 +31,16 @@
 		ng g c gallery --prefix mfa
 
 
+- Mejorar el componente "gallery" al estilo angular, crear nuevo componente "image-list" y el componente "image"
 
+		cd src/app/gallery
+		ng g c image-list -is --prefix mfa
+
+		cd image-list
+		ng g c image -is --flat --prefix mfa
+
+- A continuación refactorizo al estilo angular.
+		
 
 
 
