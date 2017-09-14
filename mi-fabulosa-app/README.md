@@ -1,22 +1,37 @@
 # MiFabulosaApp
 
-creacion de la primera aplicacion en angular 4 "mi-fabulosa-app"
 
-# creamos una nueva aplicacion angular 4 donde los selectores tienen como prefijo mfa
-ng new mi-fabulosa-app --prefix mfa
+## creacion de la primera aplicacion en angular 4 "mi-fabulosa-app" ##
 
-# arrancar servidor integrado angular y lanzar el navegador
-ng serve -o
 
-# consultar todos los flags de un comando de angular
-#ng generate component --help
-ng g c --help
+- creamos una nueva aplicacion angular 4 donde los selectores tienen como prefijo mfa
 
-#crear componente barra de navegacion
-#ng generate component navbar -is --flat
-#-is --inline-style: no crear el fichero css del componente
-# --flat: indicamos que no se cree en un nuevo directorio
-ng g c navbar -is --flat
+	    ng new mi-fabulosa-app --prefix mfa
+
+- arrancar servidor integrado angular y lanzar el navegador
+
+	    ng serve -o
+
+- consultar todos los flags de un comando de angular
+
+	`ng generate component --help`
+	
+	    ng g c --help
+
+- crear componente barra de navegacion
+	
+> 	ng generate component navbar -is --flat
+	-is --inline-style: no crear el fichero css del componente
+	--flat: indicamos que no se cree en un nuevo directorio
+
+		ng g c navbar -is --flat --prefix mfa
+
+- crear nuevo componente "gallery"
+
+		ng g c gallery --prefix mfa
+
+
+
 
 
 
