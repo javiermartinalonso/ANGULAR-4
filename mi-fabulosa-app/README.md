@@ -8,6 +8,16 @@ ng new mi-fabulosa-app --prefix mfa
 # arrancar servidor integrado angular y lanzar el navegador
 ng serve -o
 
+# consultar todos los flags de un comando de angular
+#ng generate component --help
+ng g c --help
+
+#crear componente barra de navegacion
+#ng generate component navbar -is --flat
+#-is --inline-style: no crear el fichero css del componente
+# --flat: indicamos que no se cree en un nuevo directorio
+ng g c navbar -is --flat
+
 
 
 
