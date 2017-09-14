@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Image } from '../../models/image';
 
 @Component({
   selector: 'mfa-image',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
       -webkit-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
       box-shadow: 0px 1px 6px 1px rgba(0,0,0,0.75);
-      margin-bottom:10px;
+      margin-bottom:20px;
     }
     
     img:hover {
@@ -18,6 +19,10 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class ImageComponent implements OnInit {
+
+  /*inyección de componentes, aqui inyectamos un componente de tipo Image, 
+  que viene definido en el componente padre image-list*/
+  @Input() image:Image;
 
   constructor() { }
 

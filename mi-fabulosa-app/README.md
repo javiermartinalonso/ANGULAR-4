@@ -42,7 +42,16 @@
 - A continuación refactorizo al estilo angular.
 		
 
+- Creamos el modelo (desde el raíz de la aplicación):
 
+		mkdir \src\app\models
+		cd \src\app\models
+	
+	>creamos una nueva clase archivo.ts como modelo de una imagen "image.ts"
+
+		ng g cl image
+
+- probamos el modelo para una imagen
 
 
 
