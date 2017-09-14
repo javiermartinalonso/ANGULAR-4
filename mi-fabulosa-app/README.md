@@ -55,6 +55,16 @@
 
 - Creo una lista de objetos del modelo Image desde el componente image-list, con la intención de inyectárselo al componente hijo "image"
 
+- creamos un servicio para manejar la lista de imagenes y asi poder ser usado desde cualquier componente de la aplicacion.
+
+- creo el directorio "services".
+
+		mkdir \src\app\services
+		cd \src\app\services
+	
+	>creamos una nueva clase de servicio archivo.ts como servicio de imagenes
+
+		ng g s image
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Image } from '../../models/image';
+import { ImageService } from '../../services/image/image.service';
 
 @Component({
   selector: 'mfa-image-list',
@@ -8,20 +9,15 @@ import { Image } from '../../models/image';
 })
 export class ImageListComponent implements OnInit {
   /* creo una lista de objetos del modelo Image, con la intención de inyectarselo al componente hijo "image"*/
-  images: Image[] = [
-    new Image ('1', 'Primera Imagen', 'Descripción Primera imagen', 'https://videotutoriales.com/maspa/maspa1.jpg', 'https://videotutoriales.com/maspa/maspa1-1.jpg'),
-    new Image ('2', 'Segunda Imagen', 'Descripción Segunda imagen', 'https://videotutoriales.com/maspa/maspa2.jpg', 'https://videotutoriales.com/maspa/maspa2-1.jpg'),
-    new Image ('3', 'Tercera Imagen', 'Descripción Tercera imagen', 'https://videotutoriales.com/maspa/maspa3.jpg', 'https://videotutoriales.com/maspa/maspa3-1.jpg'),
-    new Image ('4', 'Cuarta Imagen', 'Descripción Cuarta imagen', 'https://videotutoriales.com/maspa/maspa5.jpg', 'https://videotutoriales.com/maspa/maspa5-1.jpg'),
-    new Image ('5', 'Quinta Imagen', 'Descripción Quinta imagen', 'https://videotutoriales.com/maspa/maspa4.jpg', 'https://videotutoriales.com/maspa/maspa4-1.jpg'),
-    new Image ('6', 'Sexta Imagen', 'Descripción Sexta imagen', 'https://videotutoriales.com/maspa/maspa6.jpg', 'https://videotutoriales.com/maspa/maspa6-1.jpg'),
-    new Image ('7', 'Séptima Imagen', 'Descripción Séptima imagen', 'https://videotutoriales.com/maspa/maspa7.jpg', 'https://videotutoriales.com/maspa/maspa7-1.jpg'),
-    new Image ('8', 'Octava Imagen', 'Descripción Octava  imagen', 'https://videotutoriales.com/maspa/maspa8.jpg', 'https://videotutoriales.com/maspa/maspa8-1.jpg'),
-    ];
+  images: Image[] = [ ];
 
-  constructor() { }
+  constructor( private imageService: ImageService ) { }
 
   ngOnInit() {
+    /*life cicle. hook durante el ciclo de vida de la inicialización del componente
+    llamamos al metodo del servicio para obtener el contenido del objeto "images"
+    */
+    this.images = this.imageService.getImages();
   }
 
 }
