@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
-      <!-- obtener imagen del modelo input binding al componente hijo -->
-      <mfa-image [image]="image"></mfa-image>
+      <!-- obtener la lista de imagenes del modelo. input binding al componente hijo -->
+      <mfa-image *ngFor="let image of images" [image]="image"></mfa-image>
     </div>
 </div>
 

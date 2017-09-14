@@ -53,6 +53,8 @@
 
 - probamos el modelo para una imagen
 
+- Creo una lista de objetos del modelo Image desde el componente image-list, con la intención de inyectárselo al componente hijo "image"
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
