@@ -1,7 +1,12 @@
+<mfa-image-detail [selectedImage]="selectedImage"></mfa-image-detail>
+
 <div class="container">
     <div class="row">
       <!-- obtener la lista de imagenes del modelo. input binding al componente hijo -->
-      <mfa-image *ngFor="let image of images" [image]="image"></mfa-image>
+      <!-- event binding enlazo un evento del dom con un método del componente
+      input bindind con []
+      output binding con ()-->
+      <mfa-image *ngFor="let image of images" [image]="image" (click)="onSelect(image)"></mfa-image>
     </div>
 </div>
 

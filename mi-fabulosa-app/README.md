@@ -66,6 +66,20 @@
 
 		ng g s image
 
+- mejoro la aplicacion, obtener detalle de la imagen seleccionada
+
+- crear componente image-detail
+
+		ng g c image-detail --prefix mfa
+
+- event binding enlazo un evento del dom con un método del componente. De modo que cuando seleccionemos una imagen se muestre su detalle.
+
+      input bindind con []
+
+      output binding con ()
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 

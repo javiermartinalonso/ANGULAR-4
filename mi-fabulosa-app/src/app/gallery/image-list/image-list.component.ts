@@ -10,6 +10,8 @@ import { ImageService } from '../../services/image/image.service';
 export class ImageListComponent implements OnInit {
   /* creo una lista de objetos del modelo Image, con la intención de inyectarselo al componente hijo "image"*/
   images: Image[] = [ ];
+  /* imagen seleccionada con el output binding del evento OnSelect*/
+  selectedImage: Image;
 
   constructor( private imageService: ImageService ) { }
 
@@ -18,6 +20,10 @@ export class ImageListComponent implements OnInit {
     llamamos al metodo del servicio para obtener el contenido del objeto "images"
     */
     this.images = this.imageService.getImages();
+  }
+
+  onSelect(image: Image) {
+    this.selectedImage = image;
   }
 
 }
