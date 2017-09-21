@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row banner">
+
+    <div class="col-md-12">
+
+      <div class="list-group">
+        <div class="list-group-item">
+          <div class="row-action-primary">
+            <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-user"></span> Administar Usuario</h4>
+          </div>
+          <div class="row-content">
+            <a [routerLink]="['/admin/users']" class="btn btn-default btn-raised">Todos los usuarios</a>
+            <a [routerLink]="['/admin/users/create']" class="btn btn-primary btn-raised">Nuevo Usuario</a>
+          </div>
+        </div>
+        <div class="list-group-separator"></div>
+        <div class="list-group-item">
+          <div class="row-action-primary">
+            <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-picture"></span> Administrar Imágenes</h4>
+          </div>
+          <div class="row-content">
+            <a [routerLink]="['/admin/images']" class="btn btn-default btn-raised">Todas las imágenes</a>
+            <a [routerLink]="['/admin/images/create']" class="btn btn-primary btn-raised">Nueva Imagen</a>
+          </div>
+        </div>
+        <div class="list-group-separator"></div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -104,6 +104,9 @@ Aqui resumo el detalle de acciones realizadas:
 
 - Usar Servicio Angular HTTP.
 
+- crear un componente de administracion
+
+		ng g c admin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 
