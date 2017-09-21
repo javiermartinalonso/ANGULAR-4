@@ -1,3 +1,32 @@
-<p>
-  admin-images-list works!
-</p>
+<div class="col-md-10 col-md-offset-1">
+  <div>
+      <a [routerLink]="['/admin/']" class="btn btn-default"> Volver</a>
+      <a [routerLink]="['/admin/images/create']" class="btn btn-success"> Nueva Imagen</a>
+  </div>
+</div>
+
+<div class="col-md-10 col-md-offset-1">
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Imagen</th>
+        <th>Título</th>
+        <th>Acción</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr *ngFor="let image of images | async">
+        <td><img src="{{image.thumbnail}}" width="200"/></td>
+        <td>{{image.title}} </td>
+        <td>
+          <a [routerLink]="['/images/edit']" class="btn btn-info"> Editar</a>
+          <a [routerLink]="['/images/delete']" class="btn btn-danger"> Borrar</a>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>

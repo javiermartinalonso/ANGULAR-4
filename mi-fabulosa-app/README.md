@@ -107,6 +107,10 @@ Aqui resumo el detalle de acciones realizadas:
 - crear un componente de administracion
 
 		ng g c admin
+		ng g c admin-images-list
+		ng g c dashboard --flat
+
+- crear panel administracion imagenes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 
