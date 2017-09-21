@@ -1,0 +1,46 @@
+<div class="col-md-10 col-md-offset-1">
+  <div>
+    <a [routerLink]="['/admin/']" class="btn btn-default"> Volver</a>
+  </div>
+</div>
+
+<div class="col-md-10 col-md-offset-1">
+  <div class="well well bs-component">
+    <form class="form-horizontal">
+      <fieldset>
+        <legend>Añadir Nueve Imagen</legend>
+        <div class="form-group">
+          <label for="thumbnail" class="col-lg-2 control-label">Miniatura</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="thumbnail" name="thumbnail" placeholder="Miniatura de la imagen">
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="imagelink" class="col-lg-2 control-label">Enlace Imagen</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="imageLink" name="imageLink" placeholder="Enlace a la imagen">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="title" class="col-lg-2 control-label">Título</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Título">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="description" class="col-lg-2 control-label">Descripción</label>
+          <div class="col-lg-10">
+            <textarea class="form-control" rows="3" id="description" name="description" placeholder="Descripción de la Imagen"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2">
+            <button class="btn btn-default">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Crear</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
