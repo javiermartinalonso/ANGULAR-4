@@ -1,8 +1,19 @@
 # MiFabulosaApp
 
+## Probar aplicación ##
+
+-	compilar aplicacion angular y generar ficheros
+
+		npm install
+
+- arrancar servidor integrado angular y lanzar el navegador
+
+	    ng serve -o
+
 
 ## creacion de la primera aplicacion en angular 4 "mi-fabulosa-app" ##
 
+Aqui resumo el detalle de acciones realizadas:
 
 - creamos una nueva aplicación angular 4 donde los selectores tienen como prefijo mfa
 
@@ -91,6 +102,7 @@
 
 - mejorar la estructura del enrutador. creamos app.routers.ts y modificar app.module.ts
 
+- Usar Servicio Angular HTTP.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.

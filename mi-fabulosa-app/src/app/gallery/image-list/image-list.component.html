@@ -6,7 +6,7 @@
       <!-- event binding enlazo un evento del dom con un método del componente
       input bindind con []
       output binding con ()-->
-      <mfa-image *ngFor="let image of images" [image]="image" (click)="onSelect(image)"></mfa-image>
+      <mfa-image *ngFor="let image of images | async" [image]="image" (click)="onSelect(image)"></mfa-image>
     </div>
 </div>
 

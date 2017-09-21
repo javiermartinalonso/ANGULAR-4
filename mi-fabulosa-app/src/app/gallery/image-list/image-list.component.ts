@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Image } from '../../models/image';
 import { ImageService } from '../../services/image/image.service';
+import {Observable} from 'rxjs/Rx';
 
 @Component({
   selector: 'mfa-image-list',
@@ -8,8 +9,9 @@ import { ImageService } from '../../services/image/image.service';
   styles: []
 })
 export class ImageListComponent implements OnInit {
-  /* creo una lista de objetos del modelo Image, con la intención de inyectarselo al componente hijo "image"*/
-  images: Image[] = [ ];
+  /* creo una lista de objetos observables para poder obtener los objetos a través de un apirest
+   del modelo Image, con la intención de inyectarselo al componente hijo "image"*/
+  images: Observable<Image[]>;
   /* imagen seleccionada con el output binding del evento OnSelect*/
   selectedImage: Image;
 
