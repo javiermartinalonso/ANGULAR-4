@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Image } from '../models/image';
 
 @Component({
   selector: 'mfa-admin-image-create',
@@ -12,4 +13,8 @@ export class AdminImageCreateComponent implements OnInit {
   ngOnInit() {
   }
 
+  createImage(image: Image)
+  {
+    console.log(image);
+  }
 }

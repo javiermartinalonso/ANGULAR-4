@@ -118,6 +118,7 @@ Aqui resumo el detalle de acciones realizadas:
 
 		ng g c admin-image-create
 
+	- modificar el formulario, para que se comporte como un formulario en angular.
 
 
 
