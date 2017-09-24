@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Image } from '../models/image';
+import { ImageService} from '../services/image/image.service';
+
 
 @Component({
   selector: 'mfa-admin-image-create',
@@ -8,13 +9,20 @@ import { Image } from '../models/image';
 })
 export class AdminImageCreateComponent implements OnInit {
 
-  constructor() { }
+  // inyectamos el servicio
+  constructor(private imageService: ImageService) { }
 
   ngOnInit() {
   }
 
-  createImage(image: Image)
-  {
-    console.log(image);
-  }
+   //crea la imagen y gestionamos los logs del servicio
+   createImage(image) {
+   this.imageService.addImage(image)
+   .subscribe(
+     image  => console.log(image),
+     error =>  console.log(<any>error)
+    );
+}
+
+
 }

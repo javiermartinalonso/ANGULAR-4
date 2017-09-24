@@ -120,7 +120,7 @@ Aqui resumo el detalle de acciones realizadas:
 
 	- modificar el formulario, para que se comporte como un formulario en angular.
 
-
+- conectar formulario con backend por medio del servicio
 
 
 
