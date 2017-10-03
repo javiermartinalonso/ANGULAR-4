@@ -122,6 +122,10 @@ Aqui resumo el detalle de acciones realizadas:
 
 - conectar formulario con backend por medio del servicio
 
+- redireccionar el formulario a la pagina de lista de las imagenes
+
+- modificamos las reglas de validación del formulario
+	template driven   ---> validacion de formulario basada en plantilla.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
