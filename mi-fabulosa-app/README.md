@@ -128,6 +128,24 @@ Aqui resumo el detalle de acciones realizadas:
 	template driven   ---> validacion de formulario basada en plantilla.
 
 
+
+
+
+
+
+
+
+
+## urls
+
+http://localhost:4200/gallery
+
+http://localhost:4200/admin
+
+http://localhost:4200/admin/images
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 
 ## Development server

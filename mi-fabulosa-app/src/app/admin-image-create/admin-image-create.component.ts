@@ -22,7 +22,7 @@ export class AdminImageCreateComponent implements OnInit {
       .subscribe(
         image  => {
           console.log(image);
-	  // ruta a la que queremos redirigirnos despues de enviar el formulario
+	        // ruta a la que queremos redirigirnos despues de enviar el formulario
           this.router.navigate(['/admin/images']);
         },
         error =>  console.log(<any>error));
