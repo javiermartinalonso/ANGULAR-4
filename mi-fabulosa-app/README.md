@@ -165,9 +165,15 @@ Aqui resumo el detalle de acciones realizadas:
 	- En el backend incluyo el método para obtener una imagen con un id.
 	y hago arreglos con la persistencia en memoria, añadiendo un sequence.
 
+- Two Way Binding: queremos enlazar el modelo al control del formulario, así si se modifica el modelo se refleja en la view y al revés.
 
+	- En el backend incluyo el método para actualizar una imagen con un id.
 
+	- incluimos las nuevas llamadas de update en el servicio para editar las imágenes, modificamos el archivo `image.service.ts` incluyendo el método updateImage(image: Object).
+	
+	- actualizamos los datos que cambien en el modelo, modificando `admin-image-edit.component.ts` de modo que en el método onInit obtenemos los datos de la imagen, que hay en el modelo y añado la llamada al método de actualizar en el componente.
 
+	- actualizamos el html del componente `admin-image-edit.component.html`siendo muy similar al formulario de creación de la imagen pero cambiando el método al que llamamos en este caso updateImage(image) y usando el doble binding.
 
 
 ## urls
