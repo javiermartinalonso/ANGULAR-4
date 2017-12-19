@@ -1,5 +1,61 @@
-<p>
-  admin-image-edit works!
-</p>
+<div class="col-md-10 col-md-offset-1">
+  <div>
+    <a [routerLink]="['/admin/images']" class="btn btn-default"> Volver</a>
+  </div>
+</div>
 
-<p>La id de esta página es: {{id}}.</p>
+<div class="col-md-10 col-md-offset-1">
+  <div class="well well bs-component">
+    <form novalidate class="form-horizontal" (ngSubmit)="updateImage(image)" #editImageForm="ngForm">
+      <fieldset>
+        <legend>Actualizando: {{image.title}}</legend>
+        <div class="form-group">
+          <label for="thumbnail" class="col-lg-2 control-label">Miniatura</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="thumbnail" name="thumbnail" placeholder="Miniatura de la imagen" [(ngModel)]="image.thumbnail" #thumbnail="ngModel" required minlength="3">
+            <div *ngIf="thumbnail.errors?.required && thumbnail.dirty" class="alert alert-danger">
+              La miniatura es obligatoria
+            </div>
+            <div *ngIf="thumbnail.errors?.minlength && thumbnail.touched" class="alert alert-danger">
+              Debe tener como mínimo tres caracteres
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="imageLink" class="col-lg-2 control-label">Enlace a la Imagen</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="imageLink" name="imageLink" placeholder="Enlace a la imagen" [(ngModel)]="image.imageLink" #imageLink="ngModel" required>
+            <div *ngIf="imageLink.errors?.required && imageLink.dirty" class="alert alert-danger">
+              Enlace a Imagen es obligatorio
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="title" class="col-lg-2 control-label">Título</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Title" [(ngModel)]="image.title" #title="ngModel" required>
+            <div *ngIf="title.errors?.required && title.dirty" class="alert alert-danger">
+              Título es obligatorio
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="description" class="col-lg-2 control-label">Descripción</label>
+          <div class="col-lg-10">
+            <textarea class="form-control" rows="3" id="description" name="description" [(ngModel)]="image.description" #description="ngModel" required></textarea>
+            <div *ngIf="description.errors?.required && description.dirty" class="alert alert-danger">
+              Descripción es obligatorio
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2">
+            <a [routerLink]="['/admin/']" class="btn btn-default"> Cancelar</a>
+            <button type="submit" class="btn btn-primary" [disabled]="editImageForm.invalid">Actualizar</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
