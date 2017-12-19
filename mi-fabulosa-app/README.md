@@ -127,7 +127,7 @@ Aqui resumo el detalle de acciones realizadas:
 - modificamos las reglas de validación del formulario
 	template driven   ---> validacion de formulario basada en plantilla.
 
-
+- modifico el backend, ahora está creado con spring-boot-rest, es el módulo middleware-images-api
 
 
 
