@@ -130,6 +130,33 @@ Aqui resumo el detalle de acciones realizadas:
 - modifico el backend, ahora está creado con spring-boot-rest, es el módulo middleware-images-api
 
 
+- Usar Param Routes
+
+	- creamos el nuevo componente
+	
+		`cd src/app/admin`
+
+		`ng g c admin-image-edit`
+
+
+	- Con esto creamos:
+		- admin-image-edit.component.css
+    	- admin-image-edit.component.spec.ts
+		- admin-image-edit.component.html
+		- admin-image-edit.component.ts
+
+
+	- modificamos el fichero de rutas para añadir la nueva ruta al nuevo componente:
+	
+ 		`\mi-fabulosa-app\src\app\admin.routes.ts`
+	
+
+
+	- añado el nuevo componente a la aplicación
+		`\mi-fabulosa-app\src\app\app.module.ts`
+
+
+
 
 
 
@@ -144,6 +171,7 @@ http://localhost:4200/admin
 
 http://localhost:4200/admin/images
 
+http://localhost:4200/admin/images/edit/1
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
