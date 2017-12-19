@@ -156,7 +156,14 @@ Aqui resumo el detalle de acciones realizadas:
 		`\mi-fabulosa-app\src\app\app.module.ts`
 
 
+- Crear API editar Imágenes.
 
+	- incluimos las nuevas llamadas en el servicio para editar las imágenes, modificamos el archivo `image.service.ts` incluyendo el método getImage(id: String).
+	
+	- inyectamos el servicio a la clase del componente de edición de imágenes `admin-image-edit.component.ts` de modo que en el método onInit obtenemos los datos de la imagen.
+
+	- En el backend incluyo el método para obtener una imagen con un id.
+	y hago arreglos con la persistencia en memoria, añadiendo un sequence.
 
 
 

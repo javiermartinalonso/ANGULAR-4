@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 
@@ -34,9 +35,11 @@ public class Image implements Serializable {
     //Con identity hibernate es capaz de crear un sequence para generar los id´s
     //necesita spring.jpa.hibernate.ddl-auto=update
     //en el aplication properties
-    //lo nirmal sería auto
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="id", nullable=false)
+    //lo normal sería auto
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "my_entity_gen", sequenceName = "cursoangular.seq_images", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "my_entity_gen")
+    @Column(name="id")
     private Integer id;
     
     //----------------------------------------------------------------------
@@ -45,7 +48,7 @@ public class Image implements Serializable {
     @Column(name="title", nullable=false, length=250)
     private String title;
     
-	@Column(name="description", nullable=false, length=250)
+	@Column(name="description", nullable=false, length=1250)
     private String description;
 
 	@Column(name="thumbnail", nullable=false, length=250)
