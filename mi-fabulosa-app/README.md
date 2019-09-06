@@ -77,7 +77,7 @@ Aqui resumo el detalle de acciones realizadas:
 
 		ng g s image
 
-- mejoro la aplicacion, obtener detalle de la imagen seleccionada
+- mejoro la aplicación, obtener detalle de la imagen seleccionada
 
 - crear componente image-detail
 
@@ -104,17 +104,17 @@ Aqui resumo el detalle de acciones realizadas:
 
 - Usar Servicio Angular HTTP.
 
-- crear un componente de administracion
+- crear un componente de administración
 
 		ng g c admin
 		ng g c admin-images-list
 		ng g c dashboard --flat
 
-- crear panel administracion imagenes
+- crear panel administración imágenes
 
 
 - formularios
-	- crear un componente de administracion
+	- crear un componente de administración
 
 		ng g c admin-image-create
 
@@ -122,7 +122,7 @@ Aqui resumo el detalle de acciones realizadas:
 
 - conectar formulario con backend por medio del servicio
 
-- redireccionar el formulario a la pagina de lista de las imagenes
+- redireccionar el formulario a la pagina de lista de las imágenes
 
 - modificamos las reglas de validación del formulario
 	template driven   ---> validacion de formulario basada en plantilla.
